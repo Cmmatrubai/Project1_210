@@ -86,6 +86,16 @@ public class Date implements Comparable<Date> {
         return this.compareTo(other) < 0;
     }
 
+    /**
+     * Check if this date is after the given date.
+     * @param other the date to compare against
+     * @return true if this date is after the other date, false otherwise
+     */
+    public boolean after(Date other) {
+        if (other == null) return false;
+        return this.compareTo(other) > 0;
+    }
+
     // plus after(), daysSince(), addDays(), addMonths()…
 
     /** Testbed main(): 6 cases */
